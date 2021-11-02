@@ -1,0 +1,11 @@
+i = 1
+
+repeat x    (
+            if (i % 2 != 0)
+                (repeat 90 (forward, turn L 1)
+                (repeat 90 (forward, turn R 1)
+             else if (i % 2 == 0)
+                (repeat 90 (forward, turn R 1)
+                (repeat 90 (forward, turn L 1)
+    1 = 1+1
+)
