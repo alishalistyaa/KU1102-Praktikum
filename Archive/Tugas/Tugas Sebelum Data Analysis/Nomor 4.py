@@ -1,21 +1,28 @@
 # NIM / Nama    : 16521209 / Alisha Listya Wardhani
 # Tanggal       : 1 November 2021
-# Deskripsi     : Program yang menghitung sisi miring sebuah segitiga siku-siku
+# Deskripsi     : Program mengurutkan angka yang diinput dari angka terbesar
 
 # Kamus
-# TC = float (input)
-# kodeKonversi = string (input)
+# a, b, c = integer (input)
 
 # Input data dan Inisialisasi
-TC = float(input("Masukkan suhu (dalam derajat calcius): "))
-kodeKonversi = str(input("Masukkan kode konversi (F/R/K): "))
+a = int(input("Masukkan angka a: "))
+b = int(input("Masukkan angka b: "))
+c = int(input("Masukkan angka c: "))
 
-# Algoritma Data
-if kodeKonversi == "F":
-    suhu = (9/5 * TC) + 32
-elif kodeKonversi == "R":
-    suhu = 4/5 * TC
-elif kodeKonversi == "K":
-    suhu = TC + 273
-
-print(f"Suhu akhir anda {suhu}.")
+#Mencetak hasil ke layar
+if a > b and a > c:
+    if b > c:
+        print(a,b,c)
+    elif c > b:
+        print(a,c,b)
+elif b > a and b >c:
+    if a > c:
+        print(b,a,c)
+    elif c > a:
+        print(b,c,a)
+elif c > a and c > b:
+    if a > b:
+        print(c,a,b)
+    elif b > a:
+        print(c,b,a)
