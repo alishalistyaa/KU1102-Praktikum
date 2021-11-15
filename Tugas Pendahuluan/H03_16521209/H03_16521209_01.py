@@ -21,6 +21,7 @@ for i in range(1,N+1):
     x = int(input())
     daftarBilangan.append(x)
 
+# Mencetak ke layar
 print('Hasil dibalik:')
 while j >= -1*N:
     print(daftarBilangan[j])
