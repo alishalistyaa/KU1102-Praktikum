@@ -18,7 +18,7 @@ A = [[0 for j in range(N)] for i in range(N)]
 for i in range(N):
     A[i][0] = 1
     A[0][i] = 1
-    
+
 # Pengolahan data (sisa matriks merupakan pertambahan atas dan kirinya)
 for i in range(1, N):
     for j in range(1,N):
@@ -29,3 +29,27 @@ for i in range(N):
     for j in range(N):
         print(A[i][j], end = " ")
     print("")
+
+
+'''
+# Jika harus menggunakan fungsi dan prosedur, maka:
+
+# PROGRAM CABANG
+def isiMatriks(N):
+    A = [[1 for j in range(N)] for i in range(N)]
+    for i in range(1, N):
+        for j in range(1,N):
+            A[i][j] = A[i][j-1]+A[i-1][j]
+    for i in range(N):
+        for j in range(N):
+            print(A[i][j], end = " ")
+        print("")
+    
+
+# PROGRAM UTAMA
+# Input Data
+N = int(input("Masukkan N: "))
+
+# Mengisi Matriks
+isiMatriks(N)
+'''

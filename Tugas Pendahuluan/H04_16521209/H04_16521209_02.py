@@ -31,3 +31,54 @@ for i in range(N):
     for j in range(M):
         print(A[i][j], end = " ")
     print("")
+
+
+'''
+# Jika harus menggunakan prosedur atau fungsi, maka:
+
+# PROGRAM CABANG ATAU FUNGSI
+
+def isiMatriks(N,M):
+    A = [[0 for j in range(M)] for i in range(N)]
+    for i in range(N):
+        for j in range(M):
+            A[i][j] = int(input(f"Masukkan nilai A[{i+1}][{j+1}]: "))
+    return A
+
+def cariPositif(A, N, M):
+    count = 0
+    for i in range(N):
+        for j in range(M):
+            if A[i][j] > 0:
+                count +=1
+    return count
+
+def printMatriks(A, N, M):
+    for i in range(N):
+        for j in range(M):
+            print(A[i][j], end = " ")
+        print("")
+
+# PROGRAM UTAMA
+
+# Input Data 
+N = int(input("Masukkan N: "))
+M = int(input("Masukkan M: "))
+
+# Pengolahan untuk mengisi matriks
+A = isiMatriks(N,M)
+
+# Menampilkan matriks ke layar
+print(f"Ada {cariPositif(A, N, M)} bilangan positif di matriks.")
+printMatriks(A,N,M)
+
+'''
+
+
+
+
+
+
+
+
+
